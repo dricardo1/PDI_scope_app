@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+  
+  <title>Power Design Scope UI Prototype</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+
+  <link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
+  <style type="text/css">
+  	 body   {
+				font-family: 'Roboto', 'PT+Sans', Helvetica, Arial, sans-serif !important;
+	    	}
+
+  </style>
+ 
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+  
+</head>
+
+<body>
+  <div data-role="page">
+
+    <div  data-role="header" data-position="fixed">  	
+
+     	
+          <h1><img src="pd_logo_small.png" alt="PDI" /></h1> 
+          <h2>PDI Scope App</h2>
+    </div>
+    <!-- /header -->
+
+    <div data-role="content">
+    		
+			<div data-demo-html="true">
+			  <a  id="date" href="#popupBasic" data-rel="popup" data-role="button" class="date" data-transition="pop"></a>
+			    <div data-role="popup" id="popupBasic">
+			         <div data-role="content">   
+    					Date Calendar
+  					</div><!-- /content -->
+			    </div>
+		    </div>
+       
+     
+		    </br>
+
+
+	         <div data-role="fieldcontain">
+		        <label for="select-choice-c" class="select">Choose a PDI Project: </label>
+		        <select name="select-choice-c" id="select-choice-c">
+		          <option value="standard">Select...</option>
+		          <option value="rush">Miami High Rise</option>
+		          <option value="express">Denver Data Center</option>
+		          <option value="overnight">Austin Multi-Use</option>
+		        </select>
+		      </div>
+		       </br>
+		        </br>
+            <!-- Collapsible -->
+	        <div data-role="collapsible" data-theme="a" data-content-theme="">
+	          <h3>SCOPE 1</h3>
+	          <!--<p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in.</p> -->
+	          <div data-role="fieldcontain">
+		        <fieldset data-role="controlgroup">
+		          <legend>Choose Employees to add to scope:</legend>
+		           
+
+		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+		          <label for="checkbox-2a">Jeff Johnson</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+		          <label for="checkbox-3a">Don Ricardo</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+		          <label for="checkbox-4a">Ravi Kutty</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+		        </fieldset>
+		      </div>
+			      </br>
+			        <div data-role="fieldcontain">
+				        <label for="name-c">Notes:</label>
+				        <input type="text" name="name" id="name-c" value="" />
+			        </div>
+	        	</br>
+	        </div>
+          <!-- /collapsible --> 
+          <!-- Collapsible -->
+	        <div data-role="collapsible" data-theme="a" data-content-theme="">
+	          <h3>SCOPE 2</h3>
+	          <!--<p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in.</p> -->
+	          <div data-role="fieldcontain">
+		        <fieldset data-role="controlgroup">
+		          <legend>Choose Employees to add to scope:</legend>
+		           
+
+		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+		          <label for="checkbox-2a">Jeff Johnson</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+		          <label for="checkbox-3a">Don Ricardo</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+		          <label for="checkbox-4a">Ravi Kutty</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+		        </fieldset>
+		      </div>
+			      </br>
+			        <div data-role="fieldcontain">
+				        <label for="name-c">Notes:</label>
+				        <input type="text" name="name" id="name-c" value="" />
+			        </div>
+	        	</br>
+	        </div>
+          <!-- /collapsible -->  
+          <!-- Collapsible -->
+	        <div data-role="collapsible" data-theme="a" data-content-theme="">
+	          <h3>SCOPE 3</h3>
+	          <!--<p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in.</p> -->
+	          <div data-role="fieldcontain">
+		        <fieldset data-role="controlgroup">
+		          <legend>Choose Employees to add to scope:</legend>
+		           
+
+		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+		          <label for="checkbox-2a">Jeff Johnson</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+		          <label for="checkbox-3a">Don Ricardo</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+		          <label for="checkbox-4a">Ravi Kutty</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+		        </fieldset>
+		      </div>
+			      </br>
+			        <div data-role="fieldcontain">
+				        <label for="name-c">Notes:</label>
+				        <input type="text" name="name" id="name-c" value="" />
+			        </div>
+	        	</br>
+	        </div>
+	         <div data-role="collapsible" data-theme="a" data-content-theme="">
+	          <h3>SCOPE 4</h3>
+	          <!--<p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in.</p> -->
+	          <div data-role="fieldcontain">
+		        <fieldset data-role="controlgroup">
+		          <legend>Choose Employees to add to scope:</legend>
+		           
+
+		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+		          <label for="checkbox-2a">Jeff Johnson</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+		          <label for="checkbox-3a">Don Ricardo</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+		          <label for="checkbox-4a">Ravi Kutty</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+		        </fieldset>
+		      </div>
+			      </br>
+			        <div data-role="fieldcontain">
+				        <label for="name-c">Notes:</label>
+				        <input type="text" name="name" id="name-c" value="" />
+			        </div>
+	        	</br>
+	        </div>
+          <!-- /collapsible --> 
+          <!-- Collapsible -->
+	        <div data-role="collapsible" data-theme="a" data-content-theme="">
+	          <h3>SCOPE 5</h3>
+	          <!--<p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in.</p> -->
+	          <div data-role="fieldcontain">
+		        <fieldset data-role="controlgroup">
+		          <legend>Choose Employees to add to scope:</legend>
+		           
+
+		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+		          <label for="checkbox-2a">Jeff Johnson</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+		          <label for="checkbox-3a">Don Ricardo</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+		          <label for="checkbox-4a">Ravi Kutty</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+		        </fieldset>
+		      </div>
+			      </br>
+			        <div data-role="fieldcontain">
+				        <label for="name-c">Notes:</label>
+				        <input type="text" name="name" id="name-c" value="" />
+			        </div>
+	        	</br>
+	        </div>
+          <!-- /collapsible -->  
+          <!-- Collapsible -->
+	        <div data-role="collapsible" data-theme="a" data-content-theme="">
+	          <h3>SCOPE 6</h3>
+	          <!--<p>I have <code> data-content-theme</code> attribute set manually on my container to set the color to match the content block I'm in.</p> -->
+	          <div data-role="fieldcontain">
+		        <fieldset data-role="controlgroup">
+		          <legend>Choose Employees to add to scope:</legend>
+		           
+
+		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+		          <label for="checkbox-2a">Jeff Johnson</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+		          <label for="checkbox-3a">Don Ricardo</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+
+		          <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+		          <label for="checkbox-4a">Ravi Kutty</label>
+		          <div data-role="fieldcontain">
+			        <label for="Slider-c">Hours:</label>
+			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			      </div>
+		        </fieldset>
+		      </div>
+			      </br>
+			        <div data-role="fieldcontain">
+				        <label for="name-c">Notes:</label>
+				        <input type="text" name="name" id="name-c" value="" />
+			        </div>
+	        	</br>
+	        </div>
+          <!-- /collapsible --> 
+          		</br>
+
+          <!-- CARDS -->
+          <style type="text/css">
+		        
+				.card {
+				  background: #FFF;
+				  border: 1px solid #AAA;
+				  box-shadow: 0px 2px 3px 0px #AAA;
+				  padding: 0px;
+				  margin-top: 15px;
+				  margin-right: 7.5px;
+				  margin-bottom: 15px;
+				  margin-left: 7.5px;
+				  overflow: hidden;
+				  border-radius: 3px;
+				}
+				.card h1 {
+				  margin: 0px;
+				  padding: 10px;
+				  padding-bottom: 0px;
+				}
+				.card p {
+				  margin: 0px;
+				  padding: 10px;
+				  color: #333;
+				}
+				.card-image {
+				  width: 100%;
+				  height: 200px;
+				  padding: 0px;
+				  margin: 0px;
+				  background-position: center;
+				  background-repeat: no-repeat;
+				  position: relative;
+				  overflow: hidden;
+				}
+				.card-image .banner {
+				  height: 50px;
+				  width: 50px;
+				  top: 0px;
+				  right: 0px;
+				  background-position: top right;
+				  background-repeat: no-repeat;
+				  background-image: url('../images/new.png');
+				  position: absolute;
+				}
+				.card-image h1, 
+				.card-image h2, 
+				.card-image h3, 
+				.card-image h4, 
+				.card-image h5, 
+				.card-image h6 {
+				  position: absolute;
+				  bottom: 0px;
+				  width: 100%;
+				  color: white;
+				  background: rgba(0,0,0,0.65);
+				  margin: 0px;
+				  padding: 6px;
+				  border: none;
+				}
+				div.holoPressEffectDiv {
+					background-color: #CCCCCC;
+				}
+          </style>
+          <div data-role="collapsible" data-theme="a" data-content-theme="" data-transition="flip">
+	          <h3>Worker Profiles</h3>
+          	<div class="ui-grid-b ui-responsive" align="center">
+			 <div class="ui-block-a">
+			 		<div class="card">
+						<div class="card-image">
+							<img src="jeff.jpg" class="card-image" />
+								<h2>Jeff Johnson</h2>
+							
+														
+						</div>
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+					<div class="card">
+						<div class="card-image">
+							<img src="//lorempixel.com/150/150/people/3/" class="card-image" />
+								<h2>Don Ricardo</h2>
+							
+														
+						</div>
+						<p>rajeevv@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+					<div class="card">
+						<div class="card-image">
+							<img src="jeff.jpg" class="card-image" />
+								<h2>Jeff johnson</h2>
+							
+														
+						</div>
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+			 </div>
+			 <div class="ui-block-b">
+			 		<div class="card">
+						<div class="card-image">
+							<img src="//lorempixel.com/150/150/people/5/" class="card-image" />
+								<h2>Raghu Kutty</h2>
+							
+														
+						</div>
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+					<div class="card">
+						<div class="card-image">
+							<img src="jeff.jpg" class="card-image" />
+								<h2>Rajeev V.</h2>
+														
+						</div>
+
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+					<div class="card">
+						<div class="card-image">
+							<img src="//lorempixel.com/150/150/people/5/" class="card-image" />
+								<h2>Raghu Kutty</h2>
+							
+														
+						</div>
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+			 </div>
+			 <div class="ui-block-c">
+			 		<div class="card">
+						<div class="card-image">
+							<img src="//lorempixel.com/150/150/people/8/" class="card-image" />
+								<h2>Rajeev V.</h2>
+							
+														
+						</div>
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+					<div class="card">
+						<div class="card-image">
+							<img src="//lorempixel.com/150/150/people/9/" class="card-image" />
+								<h2>Ravi Kutty</h2>
+							
+														
+						</div>
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+					<div class="card">
+						<div class="card-image">
+							<img src="//lorempixel.com/150/150/people/10/" class="card-image" />
+								<h2>Ravi Kutty</h2>
+							
+														
+						</div>
+						<p>rkutty@powerdesigninc.us</p>
+						<p>Scope: 2, 5 </p> 
+						 <p>Hours Worked: 34</p> 	
+						 <p>Hours Available: 6</p>
+					</div>
+			 </div>
+			</div>
+		</div>
+        <!-- /CARDS -->   
+
+    </div>
+    <!-- /content -->
+	</div>      	
+  <!-- /page -->
+  <script type="text/javascript">
+   var d = new Date();
+   document.getElementById("date").innerHTML = d.toDateString();
+  </script>
+
+  <!-- <script type="text/javascript">
+	   	var fullDate = new Date();console.log(fullDate);
+		var twoDigitMonth = fullDate.getMonth()+"";if(twoDigitMonth.length==1)  twoDigitMonth="0" +twoDigitMonth;
+		var twoDigitDate = fullDate.getDate()+"";if(twoDigitDate.length==1) twoDigitDate="0" +twoDigitDate;
+		var currentDate = twoDigitDate + "/" + twoDigitMonth + "/" + fullDate.getFullYear();console.log(currentDate);
+
+
+	$('#date').html("<b>" + currentDate + "</b>");
+
+	</script> -->
+</body>
+
+</html>
+
