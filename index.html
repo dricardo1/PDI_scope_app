@@ -69,11 +69,11 @@
 		          <legend>Choose Employees to add to scope:</legend>
 		           
 
-		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+		          <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom scope" />
 		          <label for="checkbox-2a">Jeff Johnson</label>
 		          <div data-role="fieldcontain">
 			        <label for="Slider-c">Hours:</label>
-			        <input type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />
+			        <input class="totAmt" type="range" name="Hours" id="Slider-c" value="0" min="0" max="40" />			        
 			      </div>
 
 		          <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
@@ -296,7 +296,9 @@
 
           <!-- CARDS -->
           <style type="text/css">
-		        
+          		input.num {
+				   width: 28%;
+				}		        
 				.card {
 				  background: #FFF;
 				  border: 1px solid #AAA;
@@ -370,9 +372,10 @@
 														
 						</div>
 						<p>rkutty@powerdesigninc.us</p>
-						<p>Scope: 2, 5 </p> 
-						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 <p >Scope: </br> <input  type="range" class="checked num" type="text" name="Scope" value="0" min="0" max="30"/> </p>	 
+						 
+						 <p >Hours Worked: <input type="range" class="totHours num" type="number" name="Hours" value="0" min="0" max="30" /> </p>	
+						 
 					</div>
 					<div class="card">
 						<div class="card-image">
@@ -384,7 +387,7 @@
 						<p>rajeevv@powerdesigninc.us</p>
 						<p>Scope: 2, 5 </p> 
 						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 
 					</div>
 					<div class="card">
 						<div class="card-image">
@@ -396,7 +399,7 @@
 						<p>rkutty@powerdesigninc.us</p>
 						<p>Scope: 2, 5 </p> 
 						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 
 					</div>
 			 </div>
 			 <div class="ui-block-b">
@@ -408,10 +411,24 @@
 														
 						</div>
 						<p>rkutty@powerdesigninc.us</p>
-						<p>Scope: 2, 5 </p> 
-						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
-					</div>
+
+						<a href="#popScopes" data-rel="popup" style="text-decoration:none;"><button>Scopes</button></a>
+ 
+						<div data-role="popup" id="popScopes" data-transition="flip">
+						  <p>Choose Scopes: </p>
+						  <form>
+								    <fieldset data-role="controlgroup">
+								       
+								        <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+								        <label for="checkbox-v-2a">One</label>
+								        <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+								        <label for="checkbox-v-2b">Two</label>
+								        <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
+								        <label for="checkbox-v-2c">Three</label>
+								    </fieldset>
+								</form>
+						</div>
+						<p >Hours Worked: <input type="range" class="totHours num" type="number" name="Hours" value="0" min="0" max="30" /> </p></div>
 					<div class="card">
 						<div class="card-image">
 							<img src="jeff.jpg" class="card-image" />
@@ -422,7 +439,7 @@
 						<p>rkutty@powerdesigninc.us</p>
 						<p>Scope: 2, 5 </p> 
 						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 
 					</div>
 					<div class="card">
 						<div class="card-image">
@@ -434,21 +451,23 @@
 						<p>rkutty@powerdesigninc.us</p>
 						<p>Scope: 2, 5 </p> 
 						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 
 					</div>
 			 </div>
 			 <div class="ui-block-c">
 			 		<div class="card">
 						<div class="card-image">
-							<img src="//lorempixel.com/150/150/people/8/" class="card-image" />
+							<img src="//lorempixel.com/150/150/people/10/" class="card-image" />
+							
 								<h2>Rajeev V.</h2>
 							
 														
 						</div>
 						<p>rkutty@powerdesigninc.us</p>
-						<p>Scope: 2, 5 </p> 
-						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 <p >Scope: </br> <input  type="range" class="checked num" type="text" name="Scope" value="0" min="0" max="30"/> </p>	 
+						 
+						 <p >Hours Worked: <input type="range" class="totHours num" type="number" name="Hours" value="0" min="0" max="30" /> </p>	
+						 
 					</div>
 					<div class="card">
 						<div class="card-image">
@@ -460,7 +479,7 @@
 						<p>rkutty@powerdesigninc.us</p>
 						<p>Scope: 2, 5 </p> 
 						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 
 					</div>
 					<div class="card">
 						<div class="card-image">
@@ -472,7 +491,7 @@
 						<p>rkutty@powerdesigninc.us</p>
 						<p>Scope: 2, 5 </p> 
 						 <p>Hours Worked: 34</p> 	
-						 <p>Hours Available: 6</p>
+						 
 					</div>
 			 </div>
 			</div>
@@ -486,6 +505,25 @@
   <script type="text/javascript">
    var d = new Date();
    document.getElementById("date").innerHTML = d.toDateString();
+  </script>
+
+  <script>
+  $(document).ready(function() {
+
+  		$(function() {
+    		$('.totAmt').change(function() {
+       		$('.totHours').val(this.value);
+   			 });
+		});
+
+		$(function() {
+    		$('.checked').change(function() {
+       		$('.checkbox-2a:checked').val();
+   			 });
+		});
+
+
+  });
   </script>
 
   <!-- <script type="text/javascript">
